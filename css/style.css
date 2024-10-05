@@ -128,6 +128,15 @@ body {
     width: 100%;
     object-fit: contain;
 }
+.card h4 {
+    font-size: 14px;
+    text-align: center;
+}
+.card p {
+    font-size: 12px;
+    text-align: center;
+    color: #e2d9d9;
+}
 
 .play {
     width: 28px;
@@ -275,7 +284,7 @@ body {
     background-color: black;
     position: relative;
     bottom: 5px;
-    left: 0%;
+    left: 0;
     transition: left 0.5s;
 }
 
@@ -295,7 +304,10 @@ body {
     padding: 0 12px;
     width: 250px;
 }
-
+#playlistname{
+    font-size: 12px;
+    margin: 10px 0;
+}
 .songtime {
     width: 125px;
     color: black;
@@ -433,7 +445,11 @@ body {
     .left{ 
         width: 100vw;
     }
-
+    #playlistname{
+        font-size: 12px;
+        text-align: center;
+        margin: 10px 0;
+    }
  
 
     
