@@ -4,6 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/utility.css">
     <title>Spotify - Web Player: Music for everyone</title>
@@ -26,17 +28,17 @@
             <div class="library bg-grey rounded m-1 p-1">
                 <div class="heading">
                     <img class="invert" src="img/playlist.svg" alt="">
-                    <h2>
+                    <h2 id="Library">
                         Your Library
                     </h2>
                 </div>
 
-                <div class="songList">
-
+                <div class="songList" id="songList">
                     <ul>
-
+                       
                     </ul>
                 </div>
+                
 
                 <div class="footer">
                     <div><a href="https://www.spotify.com/jp/legal/"><span>Legal</span></a></div>
@@ -97,12 +99,12 @@
                         <p>"Calm, soothing, relaxing."</p>
                     </div>
                     <div class="card" data-playlist="Dark">
-                        <img src="/songs/Dark_(mood)/cover.jpg" alt="">
+                        <img src="/songs/Dark/cover.jpg" alt="">
                         <h4>Dark Horse</h4>
                         <p>"Dark Songs for you"</p>
                     </div>
                     <div class="card" data-playlist="Ed Sheeran">
-                        <img src="/songs/ed_sheeran/cover.jpg" alt="">
+                        <img src="/songs/Ed Sheeran/cover.jpg" alt="">
                         <h4>Ed Essentials</h4>
                         <p>"Sheeran's Best Hits"</p>
                     </div>
@@ -147,7 +149,7 @@
                 </div>
                 <div class="playbar">
                     <div  class="seekbar" id="progressBar">
-                        <div id="myProgressBar" class="circle"></div>
+                        <div id="myProgressBar" class="circle-p"></div>
                     </div>
                     
                     <div class="abovebar">
@@ -165,10 +167,7 @@
                             <img width="35" id="next" src="img/nextsong.svg" alt="">
                         </div>
                         <div class="timevol">
-
-                       
-                        <div class="songtime">
-
+                            
                         </div>
                         <div class="volume">
                             <img width="25" src="img/volume.svg" alt="">
@@ -183,7 +182,13 @@
         </div>
     </div>
     <script src="js/index.js"></script>
-    <!-- <script src="/js/script.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/0.155.0/three.min.js"></script>
+    <script  type="text/javascript"  src="https://unpkg.com/sheryjs/dist/Shery.js"></script>
+    <!-- <script src="js/animate.js"></script> -->
+    
+
 </body>
 
 </html>
