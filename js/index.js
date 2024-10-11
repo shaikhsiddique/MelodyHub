@@ -60,7 +60,7 @@ const displaySong = (songInfo)=>{
     songInfo.songs.map((e, index) => {
         songList.innerHTML += `
             <li>
-                <div class="info">
+                <div >
                     <div class="songName">${e}</div>
                     <div class="artistName">${songInfo.title}</div>
                 </div>
